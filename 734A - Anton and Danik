@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n,a,d,i;
+   char ch;
+   while(cin>>n)
+   {
+     d=0;
+     a=0;
+     
+     for(i=1;i<=n;i++)
+     {
+     
+        cin>>ch;
+        if(ch=='D')
+         d=d+1;
+          else
+          a=a+1;
+     
+     }
+     
+     if(a>d)
+     cout<<"Anton";
+     else if(d>a)
+     cout<<"Danik";
+     else
+     cout<<"Friendship";
+     
+   }
+ 
+    return 0;
+}
