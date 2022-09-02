@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  while(n--)
+  {
+      string s;
+      cin>>s;
+      int l=s.length() - 1;
+      if(s[l]+s[l-1]+s[l-2]==s[l-3] +s[l-4]+s[l-5])cout<<"Yes"<<endl;
+      else
+      cout<<"No"<<endl;
+  }
+ 
+    return 0;
+}
