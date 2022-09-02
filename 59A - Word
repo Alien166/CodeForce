@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int up=0 , low=0; 
+   char ch;
+   string str;
+   cin>>str;
+   for(int i=0;i<str.size();i++)
+   {
+       if(isupper(str[i]))
+       {
+           up++;
+       }
+       else
+       {
+           low++;
+       }
+       
+   }
+   if(up>low)
+   {
+ 
+    for(int i=0;i<str.size();i++) {
+        ch=toupper(str[i]);
+        cout<<ch;
+    }
+       
+   }
+   else
+   {
+    for(int i=0;i<str.size();i++) {
+        ch=tolower(str[i]);
+        cout<<ch;
+      }
+       
+   }
+        
+    return 0;
+    
+}
