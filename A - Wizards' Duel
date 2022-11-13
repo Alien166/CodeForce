@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+ double n,m,z,ans,speed;
+ while(cin>>n>>m>>z)
+ {
+     speed=n/(m+z);
+     ans=speed*m;
+     cout<<ans<<"\n";
+ }
+
+    return 0;
+}
