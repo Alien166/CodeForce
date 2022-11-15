@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int n,h,x,ans=0;
+   cin>>n>>h;
+   for(int i=0;i<n;i++){
+       cin>>x;
+       if(x>h)
+       {
+           ans++;
+       }//incerment person walking as usual to be equal to 1
+       ans++;//incerment while the width of the bent person is equal to 2
+
+   }
+   cout<<ans<<"\n";
+    return 0;
+}
