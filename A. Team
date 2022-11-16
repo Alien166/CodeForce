@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int n,ans=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        int x,m,s;
+        cin>>x>>m>>s;
+        ans+=(x+m+s)>=2;//sum of problem that can answered
+    }
+    cout<<ans<<"\n";
+
+    return 0;
+}
