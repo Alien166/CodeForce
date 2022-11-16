@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int n, m, z = 0;
+    cin >> n >> m;
+    if (n > m)
+        z = 0;
+    else
+        while (n <= m) {
+            n *= 3;
+            m *= 2;
+            z++;
+        }
+    cout << z << "\n";
+    return 0;
+}    
