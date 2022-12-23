@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std ;
+#define ll long long
+int main()
+{
+ ll t=1;
+ while(t--)
+{
+  string str1,str2;  cin>>str1;
+  while(str1[str1.size()-1]=='0')
+  str1.pop_back();
+  str2=str1;
+  reverse(str1.begin(),str1.end());
+  if(str2==str1)
+
+      cout<<"Yes"<<endl;
+  else
+      cout<<"No"<<endl;
+}
+    return 0;
+}
