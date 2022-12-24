@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+    string str1="CPC Sofra";
+    string str2="Ah dp here we go again";
+    int n;  cin>>n;
+    if(n==2020||n==2021)
+    {
+        cout<<str1;
+    }
+    else
+    {
+        cout<<str2;
+    }
+
+
+
+    return 0;
+}
