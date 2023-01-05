@@ -1,0 +1,62 @@
+// problem link : https://codeforces.com/contest/381/problem/A
+// author : abdeltawab
+
+
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+
+    ll t; cin>>t;
+    int arr[t] , sereje=0 , dima=0;
+    for(int i=0;i<t;++i)
+    {
+        cin>>arr[i];
+    }
+    int r=t-1;
+    int l=0;
+    for(int i=0;i<t;++i)
+    {
+        if(i%2==0)
+        {
+            if(arr[r]>arr[l])
+            {
+                sereje +=arr[r];
+                --r;
+            }
+            else if(arr[r]<arr[l])
+            {
+                sereje += arr[l];
+                ++l;
+            }
+            else
+            {
+                sereje +=arr[l];
+            }
+
+        }
+        else
+        {
+            if(arr[r]>arr[l])
+            {
+                dima +=arr[r];
+                --r;
+            }
+            else if(arr[r]<arr[l])
+            {
+                dima +=arr[l];
+                ++l;
+            }
+            else
+            {
+                dima +=arr[l];
+            }
+
+        }
+
+    }
+    cout<<sereje<<" "<<dima;
+
+    return 0;
+}
