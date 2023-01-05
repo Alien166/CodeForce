@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+  int n , untreated=0 , hired=0;
+  cin>>n;
+  for(int i=0;i<n;++i)
+  {
+      int x; cin>>x;
+      if(x>0)
+      {
+        hired +=x;
+      }
+      else if(hired<1)
+      {
+          ++untreated;
+      }
+      else
+      {
+          --hired;
+      }
+
+  }
+  cout<<untreated;
+    return 0;
+}
