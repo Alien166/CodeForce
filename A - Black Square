@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a1 , a2 , a3 , a4 , ans=0;
+    cin>>a1>>a2>>a3>>a4;
+    int calories[4]={a1,a2,a3, a4};
+    string game=" ";   cin>>game;
+    ans= count(game.begin(), game.end(),'1')*calories[0]
+        + count(game.begin(), game.end(),'2')*calories[1]
+        + count(game.begin(), game.end(),'3')*calories[2]
+        + count(game.begin(), game.end(),'4')*calories[3];
+    cout<<ans;
+    return 0;
+}
