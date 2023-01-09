@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#define ll long long 
+using namespace std;
+int main()
+{
+    ll sum=0;
+    string str;
+    cin>>str;
+    char start='a';
+    for(int i=0;i<str.size();++i)
+    {
+        ll x,y;
+        x=abs(str[i]-start);
+        y=abs(26-x);
+        sum += min(x,y);
+        start =str[i];
+    }
+    cout<<sum;
+    
+    return 0;
+}
