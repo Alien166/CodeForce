@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int sh,bu,ans=1;    cin>>sh>>bu;
+    while (1)
+    {
+        if((sh*ans)%10==bu||(sh*ans)%10==0)
+        {
+            cout<<ans;
+            return 0;
+        }
+        ++ans;
+    }
+    return 0;
+
+}
