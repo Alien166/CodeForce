@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int n; cin>>n;
+    while (n--)
+    {
+        string str; cin>>str;
+        int x=str.length();
+        if(x<=10)
+        {
+          cout<<str<<"\n";
+        }
+        else
+        {
+            cout<<str.front()<<x-2<<str.back()<<"\n";
+        }
+    }
+    return 0;
+
+}
