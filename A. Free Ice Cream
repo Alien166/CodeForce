@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+    ll n,x;
+    cin>>n>>x;
+    int distress=0;
+    for (int i = 0; i <n ; ++i) {
+        string str;
+        ll d;
+        cin >> str >> d;
+        if (str == "+"){
+            x +=d;
+        }
+        else if(str=="-"){
+            if(x>=d){
+                x -=d;
+            }
+          else{
+            distress ++;
+          }
+        }
+    }
+   cout<<x<<" "<<distress;
+    return 0;
+
+}
