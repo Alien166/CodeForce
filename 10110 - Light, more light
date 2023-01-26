@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+    unsigned int n;
+    unsigned int x;
+    while (cin>>n&&n!=0)
+    {
+        x= sqrt(n);
+        cout<<(n==x*x?"yes\n":"no\n");
+
+    }
+    return 0;
+}
