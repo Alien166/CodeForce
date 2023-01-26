@@ -4,8 +4,9 @@ int main(){
 
     unsigned int n;
     unsigned int x;
-    while (cin>>n&&n!=0)
+    while (1)
     {
+        if(n=-0) break;
         x= sqrt(n);
         cout<<(n==x*x?"yes\n":"no\n");
 
