@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;  cin>>n;
+    int friends[n+1]; //1_based_array.
+    for(int i=1;i<=n;++i)
+    {
+        int x;  cin>>x;
+        friends[x]=i;
+    }
+    for(int i=1;i<=n;++i){
+        cout<<friends[i]<<" ";
+    }
+    return 0;
+}
