@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+string solve(string str1,char ch)
+{
+    string str2="qwertyuiopasdfghjkl;zxcvbnm,./";
+    string ans;
+    for(int i=0;i<str1.length();++i)
+    {
+        int index=str2.find(str1[i]); // cuz to access a specific charracter 
+        if(ch=='R')
+        {
+            ans +=str2[index-1];
+        }
+        else
+        {
+            ans +=str2[index+1];
+        }
+    }
+    return ans;
+}
+int main()
+{
+    char ch;   cin>>ch;
+    string str1;  cin>>str1;
+    cout<<solve(str1,ch);
+    return 0;
+}
