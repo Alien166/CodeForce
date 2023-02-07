@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+   ll num,position;  cin>>num>>position;
+    if(position<=(num+1)/2)
+    {
+       cout<<position*2-1<<endl;
+    }
+    else
+    {
+       cout<<(position-(num+1)/2)*2<<endl;
+    }    return 0;
+}
